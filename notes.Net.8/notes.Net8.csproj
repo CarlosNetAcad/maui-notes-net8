@@ -67,14 +67,18 @@
 		<PackageReference Include="SQLite" Version="3.13.0" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.7" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="CommunityToolkit.Diagnostics" Version="8.2.2" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Domain\" />
 	  <None Remove="Domain\Models\" />
+	  <None Remove="Domain\Constants\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Domain\" />
 	  <Folder Include="Domain\Models\" />
+	  <Folder Include="Domain\Constants\" />
 	</ItemGroup>
 </Project>
