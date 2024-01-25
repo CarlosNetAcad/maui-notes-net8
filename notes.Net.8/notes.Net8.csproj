@@ -75,10 +75,14 @@
 	  <None Remove="Domain\" />
 	  <None Remove="Domain\Models\" />
 	  <None Remove="Domain\Constants\" />
+	  <None Remove="Presentation\" />
+	  <None Remove="Presentation\ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Domain\" />
 	  <Folder Include="Domain\Models\" />
 	  <Folder Include="Domain\Constants\" />
+	  <Folder Include="Presentation\" />
+	  <Folder Include="Presentation\ViewModels\" />
 	</ItemGroup>
 </Project>
