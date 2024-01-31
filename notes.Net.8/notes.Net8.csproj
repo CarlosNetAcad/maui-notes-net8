@@ -72,17 +72,45 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Domain\" />
-	  <None Remove="Domain\Models\" />
-	  <None Remove="Domain\Constants\" />
-	  <None Remove="Presentation\" />
-	  <None Remove="Presentation\ViewModels\" />
+	  <None Remove="Notes\" />
+	  <None Remove="Notes\Domain\" />
+	  <None Remove="Notes\Domain\Models\" />
+	  <None Remove="Notes\Infrastructure\" />
+	  <None Remove="Notes\Presentation\" />
+	  <None Remove="Notes\Appplication\" />
+	  <None Remove="Notes\Domain\Constants\" />
+	  <None Remove="Shared\" />
+	  <None Remove="Shared\Infrastructure\" />
+	  <None Remove="Shared\Infrastructure\Data\" />
+	  <None Remove="Shared\Domain\" />
+	  <None Remove="Notes\Infrastructure\Services\" />
+	  <None Remove="Notes\Infrastructure\Interfaces\" />
+	  <None Remove="Notes\Presentation\ViewModels\" />
+	  <None Remove="Shared\Presentation\" />
+	  <None Remove="Shared\Presentation\ViewModels\" />
+	  <None Remove="Presentation\Domain\" />
+	  <None Remove="Utils\" />
+	  <None Remove="Shared\Domain\Constants\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Domain\" />
-	  <Folder Include="Domain\Models\" />
-	  <Folder Include="Domain\Constants\" />
-	  <Folder Include="Presentation\" />
-	  <Folder Include="Presentation\ViewModels\" />
+	  <Folder Include="Notes\" />
+	  <Folder Include="Notes\Domain\" />
+	  <Folder Include="Notes\Domain\Models\" />
+	  <Folder Include="Notes\Infrastructure\" />
+	  <Folder Include="Notes\Presentation\" />
+	  <Folder Include="Notes\Appplication\" />
+	  <Folder Include="Notes\Domain\Constants\" />
+	  <Folder Include="Shared\" />
+	  <Folder Include="Shared\Infrastructure\" />
+	  <Folder Include="Shared\Infrastructure\Data\" />
+	  <Folder Include="Shared\Domain\" />
+	  <Folder Include="Notes\Infrastructure\Services\" />
+	  <Folder Include="Notes\Infrastructure\Interfaces\" />
+	  <Folder Include="Notes\Presentation\ViewModels\" />
+	  <Folder Include="Shared\Presentation\" />
+	  <Folder Include="Shared\Presentation\ViewModels\" />
+	  <Folder Include="Presentation\Domain\" />
+	  <Folder Include="Utils\" />
+	  <Folder Include="Shared\Domain\Constants\" />
 	</ItemGroup>
 </Project>
