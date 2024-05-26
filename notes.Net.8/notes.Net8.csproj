@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net8.0-android;net8.0-ios;</TargetFrameworks>
+		<!--TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks-->
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
 
@@ -88,9 +88,11 @@
 	  <None Remove="Notes\Presentation\ViewModels\" />
 	  <None Remove="Shared\Presentation\" />
 	  <None Remove="Shared\Presentation\ViewModels\" />
-	  <None Remove="Presentation\Domain\" />
 	  <None Remove="Utils\" />
 	  <None Remove="Shared\Domain\Constants\" />
+	  <None Remove="Utils\Domain\" />
+	  <None Remove="Utils\Domain\Extensions\" />
+	  <None Remove="Shared\Presentation\Handlers\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Notes\" />
@@ -109,8 +111,10 @@
 	  <Folder Include="Notes\Presentation\ViewModels\" />
 	  <Folder Include="Shared\Presentation\" />
 	  <Folder Include="Shared\Presentation\ViewModels\" />
-	  <Folder Include="Presentation\Domain\" />
 	  <Folder Include="Utils\" />
 	  <Folder Include="Shared\Domain\Constants\" />
+	  <Folder Include="Utils\Domain\" />
+	  <Folder Include="Utils\Domain\Extensions\" />
+	  <Folder Include="Shared\Presentation\Handlers\" />
 	</ItemGroup>
 </Project>

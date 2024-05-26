@@ -3,9 +3,9 @@
     x:Class="notes.Net._8.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:notes.Net._8"
+    xmlns:local="clr-namespace:notes.Net8"
     Shell.FlyoutBehavior="Disabled"
-    Title="notes.Net._8">
+    Title="notes.Net8">
 
     <ShellContent
         Title="Home"

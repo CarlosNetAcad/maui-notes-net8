@@ -23,6 +23,8 @@ public static class MauiProgram
 #endif
 		Bootstrap( builder );
 
+		MapHandlers();
+
 		return builder.Build();
 	}
 
@@ -42,5 +44,21 @@ public static class MauiProgram
 		);
 
 	}
+
+	static void MapHandlers()
+	{
+        Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping("BorderLessEntry", (handler, view) =>
+        {
+            //if (view is BorderLessEntry)
+            //{
+#if __ANDROID__
+                handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Red);
+#elif __IOS__
+				handler.PlatformView.BackgroundColor	= UIKit.UIColor.Clear;
+				handler.PlatformView.BorderStyle		= UIKit.UITextBorderStyle.None;
+#endif
+            //}
+        });
+    }
 }
 
